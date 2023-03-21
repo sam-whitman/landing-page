@@ -7,22 +7,24 @@
 
 .header {
     background-color: tomato;
-    color: white;
+    color: honeydew;
 }
 
 .top-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
     background-color: darkslategray;
+    padding: 10px;
 }
 
 .top-row div {
-    font-size: 3em;
+    font-size: 1.5em;
     font-weight: 900;
     flex: 1;
-    text-align: center;
+    text-align: left;
+    max-width: 500px;
 }
 
 .top-row ul {
@@ -43,12 +45,19 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
 .head-vert {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 1 1 500px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -59,19 +68,79 @@
 
 .pic-card img {
     max-width: 500px;
-    flex: 1;
-    margin: 100px 20px;
+    min-width: 250px;
+    flex: 1 1 500px;
+    margin: 20px 20px;
     vertical-align: middle;
-    border: 3px solid white;
+    border: 3px solid honeydew;
 }
 
 #order {
     background-color: darkslategray;
-    border: 3px solid white;
-    color: white;
+    border: 3px solid honeydew;
+    color: honeydew;
     width: 50%;
     border-radius: 10px;
     padding: 10px 20px;
     margin-top: 20px;
     font-weight: 900;
+}
+
+.specials {
+    background-color: honeydew;
+    color: darkslategray;
+}
+
+h2 {
+    text-align: center;
+    color: darkslategray;
+    font-weight: 700;
+    font-size: 2em;
+    padding: 20px;
+    background-color: honeydew;
+}
+
+.specials {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+.menu-item {
+    flex: 50% 1 100px;
+    max-width: 200px;
+    height: auto;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.quote {
+    background-color: rgb(194, 208, 194);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 100px;
+}
+
+.quote p {
+    max-width: 500px;
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 1.25em;
+    font-weight: 200;
+}
+
+.quote h3 {
+    text-align: left;
+    font-variant: small-caps;
+    font-weight: 500;
 }
