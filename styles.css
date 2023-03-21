@@ -75,7 +75,7 @@ h1 {
     border: 3px solid honeydew;
 }
 
-#order {
+button {
     background-color: darkslategray;
     border: 3px solid honeydew;
     color: honeydew;
@@ -143,4 +143,43 @@ h2 {
     text-align: left;
     font-variant: small-caps;
     font-weight: 500;
+}
+
+.call {
+    padding: 50px 100px;
+    background-color: honeydew;
+}
+
+.call-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    background-color: tomato;
+    color: honeydew;
+    padding: 30px 40px;
+    border-radius: 10px;
+
+}
+
+.call-card > button {
+    width: 150px;
+    margin: 0px;
+    background-color: tomato;
+}
+
+footer {
+    background-color: darkslategray;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    color: honeydew;
+    padding: 30px 50px;
+}
+
+footer a {
+    color: honeydew;
+    text-decoration: none;
 }
